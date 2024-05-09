@@ -3,7 +3,7 @@
 
 void Mfrc522::write(const Ustring &payload) {
 
-    byte block=0;
+    byte block=1;
     uint16_t left = payload.length();
     byte buffer[18];
     byte buffer_fill=0;
