@@ -215,7 +215,7 @@ bool Mfrc522::measure() {
             if(_in_hex) {
                 buf.add_hex(buffer2[i]);
             } else {
-                if(buffer2[i]<32)
+                if(buffer2[i]<32 && buffer2[i]!=0)
                     buf.add('.');
                 else buf.add((char)buffer2[i]);
             }
